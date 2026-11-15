@@ -1,10 +1,14 @@
-// A working roblox-game-01 entry (Node 22, standard library only): the game is this directory's Rojo
-// project, built into game.rbxl with `rojo build default.project.json --output game.rbxl`, and the program
-// hands it in. It copies game.rbxl, src/, screenshots/ and PLAY.json from beside this file to /output and
-// writes /output/dossier.json, the summary the judge reads, with the vendored make.fun library. A starting
-// point, not a winner: it is a grey square that moves with the arrow keys. Build your game, rebuild
-// game.rbxl, put your PNG or JPEG screenshots in screenshots/ (the first by name is the cover) and fill in
-// PLAY.json with your published place.
+// COIN RUSH — roblox-game-01 entry (Node 22, standard library only).
+// The game is this directory's Rojo project, built into game.rbxl with
+// `rojo build default.project.json --output game.rbxl`, and the program
+// hands it in. It copies game.rbxl, src/, screenshots/ and PLAY.json from
+// beside this file to /output and writes /output/dossier.json, the summary
+// the judge reads, with the vendored make.fun library.
+//
+// The game: a 2D arcade collector in a Roblox GUI — steer the cyan player
+// (arrow keys / WASD), collect gold coins (+10 each), dodge red hazards,
+// 3 lives, 60-second timer, level up every 5 coins. Menu and game-over
+// overlays; SPACE to start, R to restart.
 //
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
